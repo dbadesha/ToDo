@@ -10,7 +10,7 @@ render: function(){
           <ul className = 'menu'>
             <li className = 'menu-text'>React Time App</li>
             <li><IndexLink to='/' activeClassName ='active-link'>Timer</IndexLink></li>
-            <li><Link to ='/' activeClassName='active-link'>Stop Watch</Link></li>
+            <li><Link to ='/StopWatch' activeClassName='active-link'>StopWatch</Link></li>
           </ul>
       </div>
       <div className = 'top-bar-right'>

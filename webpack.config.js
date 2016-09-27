@@ -22,8 +22,10 @@ module.exports = {
   resolve: {
     root: __dirname,
     alias: {
-      Main :'app/components/Main.jsx',
-      Nav :'app/components/Nav.jsx',
+      Main: 'app/components/Main.jsx',
+      Nav: 'app/components/Nav.jsx',
+      Timer: 'app/components/Timer.jsx',
+      StopWatch: 'app/components/StopWatch.jsx', 
       AppStyles:'app/styles/app.scss'
     },
     extensions: ['', '.js', '.jsx']

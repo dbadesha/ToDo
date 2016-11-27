@@ -1,8 +1,11 @@
 var React = require('react');
+var Clock = require('Clock');
 
 var StopWatch = ()=>{
   return(
-    <div>StopWatch Component </div>
+    <div>
+    	<Clock millisecs = {120}/>
+    </div>
   )};
 
 module.exports = StopWatch;

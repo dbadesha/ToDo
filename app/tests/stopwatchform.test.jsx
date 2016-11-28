@@ -8,7 +8,7 @@ var StopWatchForm = require('StopWatchForm');
 
 
 describe('StopWatch Form Tests',()=>{
-	it(' stopwatch form component should exist', ()=>{
+	it('stopwatch form component should exist', ()=>{
 		expect(StopWatchForm).toExist();
 	});
 

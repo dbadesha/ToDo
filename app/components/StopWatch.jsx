@@ -27,6 +27,10 @@ var StopWatch = React.createClass({
 		}
 	},
 
+	componentWillUnmount: function(){
+		console.log("Test:  Component Did Unmount");
+	},
+
 	startTimer: function(){
 		this.timer = setInterval(()=>{
 			var newCount = this.state.count - 1;
@@ -59,6 +63,7 @@ var StopWatch = React.createClass({
 
 		return (
 		    <div>
+		    	<h2 className="page-title">Countdown App</h2>
 		    	<Clock millisecs={count}/>
 		    	{renderControls()}
 		    </div>

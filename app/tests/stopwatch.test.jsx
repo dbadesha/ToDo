@@ -32,5 +32,27 @@ describe('stop watch test', () =>{
 				done();
 			}, 3001)
 		});
+
+		it('should pause on the status paused', (done)=>{
+			stopwatch.handleCountDown(10);
+			stopwatch.handleStatusChange('paused');
+
+			setTimeout(()=>{
+				expect(stopwatch.state.count).toBe(10);
+				expect(stopwatch.state.countdownStatus).toBe('paused');
+				done();
+			}, 1001)
+		});
+
+		it('should reset to zero on the status stopped', (done)=>{
+			stopwatch.handleCountDown(10);
+			stopwatch.handleStatusChange('stopped');
+
+			setTimeout(()=>{
+				expect(stopwatch.state.count).toBe(0);
+				expect(stopwatch.state.countdownStatus).toBe('stopped');
+				done();
+			}, 1001)
+		});
 	});
 });

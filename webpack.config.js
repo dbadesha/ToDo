@@ -28,7 +28,8 @@ module.exports = {
       StopWatch: 'app/components/StopWatch.jsx', 
       AppStyles:'app/styles/app.scss',
       Clock: 'app/components/Clock.jsx',
-      StopWatchForm: 'app/components/StopWatchForm.jsx'
+      StopWatchForm: 'app/components/StopWatchForm.jsx',
+      Controls: 'app/components/Controls.jsx'
     },
     extensions: ['', '.js', '.jsx']
   },

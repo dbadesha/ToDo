@@ -21,15 +21,12 @@ module.exports = {
   },
   resolve: {
     root: __dirname,
+    modulesDirectories: [
+      'node_modules',
+      './app/components'
+    ],
     alias: {
-      Main: 'app/components/Main.jsx',
-      Nav: 'app/components/Nav.jsx',
-      Timer: 'app/components/Timer.jsx',
-      StopWatch: 'app/components/StopWatch.jsx', 
-      AppStyles:'app/styles/app.scss',
-      Clock: 'app/components/Clock.jsx',
-      StopWatchForm: 'app/components/StopWatchForm.jsx',
-      Controls: 'app/components/Controls.jsx'
+      AppStyles:'app/styles/app.scss'
     },
     extensions: ['', '.js', '.jsx']
   },

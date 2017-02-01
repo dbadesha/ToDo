@@ -1,13 +1,15 @@
 var React = require('react');
 
 var Todo = React.createClass({
-	render: function(){
-		return(
-		<div>
-		ToDo Main jsx
-		</div>
-		)
-	}
+  render: function () {
+    var {id, text} = this.props;
+
+    return (
+      <div>
+        {id}. {text}
+      </div>
+    )
+  }
 });
 
 module.exports = Todo;
